@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --purple-ligth: #8C8CBA;
+    --gray-50: #E1E1E6;
+    --blue-600: #1A1924;
+    --blue-700: #282843;
+    --blue-800: #24243D;
+    --gray-900: #16151E;
+}
+
+html, body, input, strong, span, a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: var(--gray-50)
+}
+
+button{
+    cursor: pointer; 
+    background-color: transparent;
+    border: none;  
+}
+ 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.containerContacts{
+    height: 47rem;
+    width: 26rem;
+    border-radius: 8px;
+    background-color: var(--blue-600);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+    height: 10rem;
+    padding: 2.5rem;
+    background-color: var(--gray-900);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar span{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons button{
+    color: var(--gray-50);
+}
+
+.buttons button i{
+    font-size: 1.25rem;
+}
+
+form{
+    width: 100%;
+    background-color: var(--blue-800);
+    border-radius: 5px;
+}
+
+.search{
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.search i{
+    font-size: 1rem;
+    color: var(--gray-50);
+    margin-right: 0.625rem;
+}
+
+form input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 0.75rem;
+    color: var(--gray-50);
+}
+
+form input::placeholder{
+    color:#e1e1e6a9;
+}
+
+main{
+    width: 100%;
+    padding: 3rem 2.5rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+.letters{
+    overflow-y: scroll;
+    scroll-margin: 1rem;
+    height: 32.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.letter{
+    border-radius: 8px;
+    padding: 0.625rem 0.875rem;
+    background-color: blueviolet;
+}
+
+.unicListLetter{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contacts{
+    margin-left: 3.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.letters::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+
+.letters::-webkit-scrollbar-thumb{
+    background-color:var(--blue-800);
+    border-radius: 999px;
+}
+
+
+.contact{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar img{
+    border-radius: 999px;
+    width: 3rem;
+}
+
+.informContact{
+    display: flex;
+    flex-direction: column;
+}
+
+.informContact span{
+    font-size: 0.75rem;
+    color: var(--purple-ligth)
+}
