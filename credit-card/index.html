@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Credit card</title>
+</head>
+<body>
+    <div class="container">
+        <div class="myForm">
+            <form>
+                <div class="containerForms">
+                    <div class="dataForm">
+                        <div class="numberCard">
+                            <label for="">Número do cartão</label>
+                            <input class="cardNumberField" oninput="formatNumberCard(this)" type="text" placeholder="Número que está na frente do cartão" required>
+                        </div>
+                        
+                        
+                        <div class="title">
+                            <label for="">Nome do titular</label>
+                            <input type="text" name="" id="" maxlength="10" placeholder="Nome como está no cartão">
+                        </div>
+                        
+        
+                        <div class="validate">
+                            <div class="mmaa">
+                                <label for="">Validade</label>
+                                <input type="text" placeholder="mm/aa">
+                            </div>
+        
+                            <div class="cvv">
+                                <label for="">CVV</label>
+                                <input type="number" placeholder="***" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength
+                                )" maxlength="3" required>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="flipper">
+                            <div class="front">
+                                <div class="myFrontCard">
+                                    <header>
+                                        <img src="" alt="">
+
+                                        <img src="" alt="">
+                                    </header>
+
+                                    <div class="containerBodyFrontCard">
+                                        <main>
+                                            <span class="numberCardThisInput"></span>
+                                        </main>
+
+                                        <footer>
+                                            <span>Seu nome aqui</span>
+                                            <span>**/***</span>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="back">
+                                    <div class="myBackCard">
+                                        <header>
+                                            <img src="" alt="">
+                    
+                                            <img src="" alt="">
+                                        </header>
+                    
+                                        <div class="containerBodyBackCard">
+                                            <main>
+                                                <span class="passwordCard">***</span>
+                                                <span>CVV</span>
+                                            </main>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="securityStatus">
+                                <img src="" alt="">
+                                <span>Seus dados estão seguros</span>
+                            </div>
+                    </div>
+                </div>
+            
+                <button>Adicionar cartão</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
