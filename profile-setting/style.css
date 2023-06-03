@@ -1,0 +1,109 @@
+:root{
+    --gray-100: #38343D;
+    --gray-200: #686071;
+    --gray-300: #797085;
+    --gray-400: #F4EFFA;
+    --gray-500: #FDFCFE;
+    --red: #AA2222;
+    --gradient: #935FD3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    background-color: var(--gradient);
+    margin: 0 auto;
+}
+
+span{
+    font-size: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    margin: 0 auto;
+}
+
+.profileContainer{
+    width: 24rem;
+    height: 35rem;
+    background-color: var(--gray-500);
+    border-radius: 8px;
+    gap: 1rem;
+
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile, .cont, .preferences, .privacidade, .footer{
+    width: 100%;
+}
+
+.profile::after, .cont::after, .preferences::after, .privacidade::after{
+    content: '';
+    border-bottom: 1px solid var(--gray-400);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cont, .preferences, .privacidade, .footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.data, .inform, .notif, .acessibility, .conects, .contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    gap: 1rem;
+}
+
+.imgProfile img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 8px;
+}
+
+.informs span{
+    font-size: 0.75rem;
+    color: var(--gray-200)
+}
+
+.title-span{
+    color: var(--gray-300);
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.icon-plus-inform{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.exit span, .exit i{
+    color: var(--red)
+}
+
