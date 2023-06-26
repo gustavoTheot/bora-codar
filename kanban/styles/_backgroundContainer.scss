@@ -1,0 +1,33 @@
+.backgroundContainer{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 10rem; 
+    
+    .navbar{
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 3.5rem;
+
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $purple-dark;
+
+                    display: flex;
+                    flex-direction: row;
+                    gap: 1rem;
+
+                }
+
+                :hover{
+                    color: $withe;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
